@@ -76,6 +76,33 @@
   </div>
 </section> -->
 
+  <section>
+    <div class="container">
+      <button data-open-modal='#modal-1' class="btn btn--full"></button>
+    </div>
+  </section>
+
+  <section class="section">
+    <div style='margin-bottom:30px;' class="container">
+      <div class="grid-messages">
+        <div class="grid-messages__item grid-messages__item--left">
+          <div class="grid-messages__message">Производство на&nbsp;территории Российской Федерации, всегда свежий продукт.</div>
+          <div class="grid-messages__message">Гарантия очистки <br> >98%</div>
+        </div>
+        <div class="grid-messages__item grid-messages__item--center background-many-gradient background-many-gradient--circle">
+          <img src="img/banks-1.png" alt="banks">
+        </div>
+        <div class="grid-messages__item grid-messages__item--right">
+          <div class="grid-messages__message">Европейское оборудование и&nbsp;стандарты, контроль качества на&nbsp;всех этапах производства.</div>
+          <div class="grid-messages__message">Продукт Сертифицирован <br>&mdash;&nbsp;ГОСТ Р.</div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <img src="img/man-1.png" alt="man">
+    </div>
+  </section>
+
   <section class="section section--mb">
     <div class="container">
       <h2 class="h2">ЗАКАЖИ ПРЯМО СЕЙЧАС</h2>
@@ -267,7 +294,26 @@
     </div>
   </footer>
 
+  <div id="modal-1" class="modal">
+    <h2 class="h2">Внимание!</h2>
+    <p>&mdash;&nbsp;Внимательно проверяйте данные, указанные для доставки (копия будет отправлена Вам на&nbsp;почту). Изменить данные нельзя. В&nbsp;случае указания неправильных данных&nbsp;&mdash; переоформите заказ.</p>
+    <p>&mdash;&nbsp;Мы&nbsp;не&nbsp;несем ответственность за&nbsp;качество работы транспортных компаний. После получения трек кода&nbsp;&mdash; вопросы по&nbsp;доставке направляйте в&nbsp;выбранную ТК.</p>
+    <p>&mdash;&nbsp;Обмен и&nbsp;возврат продукции не&nbsp;осуществляется.</p>
+    <p>&mdash;&nbsp;Все статьи и&nbsp;информация о&nbsp;продукции, предоставляемые на&nbsp;этом сайте, предназначены только для информационных и&nbsp;образовательных целей.</p>
+    <p>&mdash;&nbsp;Продукты, предлагаемые на&nbsp;этом сайте, не&nbsp;предназначены для потребления человеком или животными.</p>
+    <p>&mdash;&nbsp;Вы&nbsp;должны быть старше 21 года, чтобы использовать данный сайт.</p>
+    <p>&mdash;&nbsp;Продукты, предлагаемые на&nbsp;этом сайте, НЕ&nbsp;ПРЕДНАЗНАЧЕНЫ ДЛЯ ДИАГНОСТИКИ, ЛЕЧЕНИЯ, СНИЖЕНИЯ ПОСЛЕДСТВИЙ, ЛЕЧЕНИЯ И&nbsp;ПРЕДОТВРАЩЕНИЯ ЗАБОЛЕВАНИЙ.</p>
+    <p>&mdash;&nbsp;Приобретая любой из&nbsp;этих продуктов, клиент признает риски нецелевого использования продуктов для лабораторных исследований in&nbsp;vitro и&nbsp;in&nbsp;vivo на&nbsp;модельных организмах.</p>
+    <div class="modal__footer">
+      <button class="btn btn--full d-sm-none">Согласен</button>
+      <button class="btn btn--full d-noen d-sm-inline-block">С&nbsp;условиями согласен</button>
+      <button data-close-modal class="btn btn--line">Отмена</button>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script src="js/vendor/scroll-lock.js"></script>
+  <script src="js/vendor/tingle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
