@@ -20,6 +20,8 @@
   <title>Vital Spark&nbsp;&mdash; главная</title>
   <meta name="description" content="Мое описание для SEO">
   <link rel="canonical" href="index.html">
+
+  <script src="js/video.js"></script>
 </head>
 
 <body>
@@ -35,10 +37,10 @@
         <img src="img/logo.svg" alt="logo">
       </div>
       <nav class="header__links">
-        <span class="header__links__item"><a class="like-text" href="#">О&nbsp;товаре</a></span>
-        <span class="header__links__item"><a class="like-text" href="#">Заказать</a></span>
-        <span class="header__links__item"><a class="like-text" href="#">Оплата и&nbsp;доставка</a></span>
-        <span class="header__links__item"><a class="like-text" href="#">Сотрудничество</a></span>
+        <span class="header__links__item"><a class="like-text" href="#boxVideo-start">О&nbsp;товаре</a></span>
+        <span class="header__links__item"><a class="like-text" href="#order">Заказать</a></span>
+        <span class="header__links__item"><a class="like-text" href="#pay">Оплата и&nbsp;доставка</a></span>
+        <span class="header__links__item"><a class="like-text" href="#work">Сотрудничество</a></span>
         <div class="header__links__item--lang header__links__item">
           <a class="like-text" href="#">EN</a>
           <a class="like-text" href="#">RU</a>
@@ -80,10 +82,10 @@
   <section class="section section--mb">
     <div class="container">
       <div class="custom-block-1">
-        <div id="boxVideo" class="owl-carousel">
-          <img class="active" src="img/frames/1.png" alt="video"><img src="img/frames/2.png" alt="video"><img src="img/frames/3.png" alt="video"><img src="img/frames/4.png" alt="video"><img src="img/frames/5.png" alt="video"><img src="img/frames/6.png" alt="video"><img src="img/frames/7.png" alt="video"><img src="img/frames/8.png" alt="video"><img src="img/frames/9.png" alt="video"><img src="img/frames/10.png" alt="video"><img src="img/frames/11.png" alt="video"><img src="img/frames/12.png" alt="video"><img src="img/frames/13.png" alt="video"><img src="img/frames/14.png" alt="video"><img src="img/frames/15.png" alt="video"><img src="img/frames/16.png" alt="video"><img src="img/frames/17.png" alt="video"><img src="img/frames/18.png" alt="video"><img src="img/frames/19.png" alt="video"><img src="img/frames/20.png" alt="video"><img src="img/frames/21.png" alt="video"><img src="img/frames/22.png" alt="video"><img src="img/frames/23.png" alt="video"><img src="img/frames/24.png" alt="video"><img src="img/frames/25.png" alt="video"><img src="img/frames/26.png" alt="video"><img src="img/frames/27.png" alt="video"><img src="img/frames/28.png" alt="video"><img src="img/frames/29.png" alt="video"><img src="img/frames/30.png" alt="video"><img src="img/frames/31.png" alt="video"><img src="img/frames/32.png" alt="video"><img src="img/frames/33.png" alt="video"><img src="img/frames/34.png" alt="video"><img src="img/frames/35.png" alt="video"><img src="img/frames/36.png" alt="video"><img src="img/frames/37.png" alt="video"><img src="img/frames/38.png" alt="video"><img src="img/frames/39.png" alt="video"><img src="img/frames/40.png" alt="video"><img src="img/frames/41.png" alt="video"><img src="img/frames/42.png" alt="video"><img src="img/frames/43.png" alt="video"><img src="img/frames/44.png" alt="video"><img src="img/frames/45.png" alt="video"><img src="img/frames/46.png" alt="video"><img src="img/frames/47.png" alt="video"><img src="img/frames/48.png" alt="video"><img src="img/frames/49.png" alt="video"><img src="img/frames/50.png" alt="video"><img src="img/frames/51.png" alt="video"><img src="img/frames/52.png" alt="video"><img src="img/frames/53.png" alt="video"><img src="img/frames/54.png" alt="video"><img src="img/frames/55.png" alt="video"><img src="img/frames/56.png" alt="video"><img src="img/frames/57.png" alt="video"><img src="img/frames/58.png" alt="video"><img src="img/frames/59.png" alt="video"><img src="img/frames/60.png" alt="video"><img src="img/frames/61.png" alt="video">
+        <div id="boxVideo">
+          <canvas></canvas>
         </div>
-        <img src="img/final.01.png" alt="box" class="image-video-first">
+        <img id="boxVideo-start" src="img/final.01.png" alt="box" class="image-video-first">
         <div class="background-many-gradient">
           <h2 class="h2 text-left">Гормон роста</h2>
           <p>Препарат Витал Спарк был разработан не&nbsp;только для выступащих спорсменов, но&nbsp;и&nbsp;для тех, кто стремится улучшить качество жизни и&nbsp;одновременно получить красивый рельеф и&nbsp;стройную фигуру.<br>Гормон Роста человека, самотропин&nbsp;&mdash; это определенный белок который наш организм вырабатывает в&nbsp;предней части гипофиза на&nbsp;протяжении жизни.</p>
@@ -144,7 +146,7 @@
             <path d="M4.88264 85.1096L5.16239 86.3637L5.298 85.0927C5.39086 84.2289 5.75245 83.4159 6.33183 82.7683C6.91121 82.1208 7.6792 81.6712 8.52765 81.4829L9.77377 81.2033L8.50225 81.0677C7.63855 80.9736 6.82591 80.6117 6.17832 80.0328C5.53073 79.4538 5.08066 78.6868 4.89113 77.8392L4.61138 76.5936L4.47577 77.8646C4.38291 78.7284 4.02132 79.5414 3.44194 80.189C2.86255 80.8365 2.09457 81.2861 1.24612 81.4744L0 81.754L1.27152 81.8896C2.13495 81.9807 2.948 82.3404 3.59591 82.9182C4.24382 83.4959 4.6939 84.2625 4.88264 85.1096Z" fill="white" />
             <path d="M160.737 79.3729C159.891 79.2276 159.11 78.8237 158.503 78.2167C157.896 77.6097 157.492 76.8295 157.346 75.9835L157.134 74.7209L156.931 75.9835C156.787 76.83 156.383 77.6108 155.776 78.218C155.168 78.8252 154.387 79.2288 153.54 79.3729L152.277 79.5848L153.54 79.7881C154.394 79.9266 155.183 80.3274 155.798 80.9348C156.413 81.5422 156.824 82.3261 156.973 83.1776L157.177 84.4317L157.389 83.1776C157.527 82.3243 157.928 81.5354 158.536 80.9204C159.143 80.3054 159.928 79.8948 160.779 79.7458L162.042 79.5424L160.737 79.3729Z" fill="white" />
           </svg>
-          <img src="img/final.61.png" alt="box" class="image-video-last">
+          <img id="boxVideo-end" src="img/final.61.png" alt="box" class="image-video-last">
           <ul class="features">
             <li class="features__item">Обладает мощным анаболическим эффектом для активного наращивания мышечной массы.</li>
             <li class="features__item">Не&nbsp;имеет побочных эффектов за&nbsp;исключением индивидуальной непереносимости.</li>
@@ -190,7 +192,7 @@
     </div>
   </section>
 
-  <section class="section section--mb">
+  <section id="order" class="section section--mb">
     <div class="container">
       <h2 class="h2">ЗАКАЖИ ПРЯМО СЕЙЧАС</h2>
       <div style="max-width: 940px;margin-left: auto;margin-right: auto;position: relative; z-index: 0;" class="">
@@ -259,7 +261,7 @@
     </div>
   </section>
 
-  <section class="section section--mb">
+  <section id="pay" class="section section--mb">
     <div class="container">
       <h2 class="h2">Оплата и&nbsp;доставка</h2>
       <p class="text-center save-margin">Оплатить свой заказ любым из&nbsp;нижеперечисленных способов. Каждый из&nbsp;них гарантирует оперативную и&nbsp;надежную отправку платежа получателю, доставку осуществляет транспортная компания &laquo;СДЭК&raquo;</p>
@@ -310,7 +312,7 @@
     </div>
   </section>
 
-  <section class="section section--mb">
+  <section id="work" class="section section--mb">
     <div class="container">
       <h2 class="h2">Сотрудничество</h2>
       <p class="text-center save-margin">У&nbsp;нас есть предложения для выступающих атлетов, тренеров и&nbsp;интернет магазинов.</p>
@@ -401,11 +403,11 @@
   <!-- <script src="js/vendor/frameplayer.min.js"></script>
   <script src="js/vendor/jsafp.js"></script>
   <script src="js/vendor/canvas-video.js"></script> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+  <script src="js/vendor/smooth-scroll.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-  <script src="js/vendor/scroll-lock.js"></script>
+  <!-- <script src="js/vendor/scroll-lock.js"></script> -->
   <script src="js/vendor/tingle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
