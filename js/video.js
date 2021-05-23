@@ -53,11 +53,7 @@ function myCustom() {
   var cv = cvParent.querySelector("canvas");
   var cx = cv.getContext("2d");
   drawImageProp(cx, imgs[0]);
-
-  if (isInternetExplorer()) {
-    document.documentElement.classList.add('ie-11');
-  }
-
+  document.documentElement.classList.add('no-been-anim');
   cvParent.style.WebkitTransform = 'translateX(-50%)';
   cvParent.style.transform = 'translateX(-50%)';
 
@@ -198,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   function videoAnim() {
-    document.documentElement.classList.remove('ie-11');
+    document.documentElement.classList.remove('no-been-anim');
     var start = null;
     var dif = document.querySelector('#boxVideo-end').getBoundingClientRect().top - document.querySelector('#boxVideo-start').getBoundingClientRect().top;
     var wrapper = document.querySelector('.custom-block-1');
@@ -234,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function videoAnimReverse() {
-    document.documentElement.classList.remove('ie-11');
+    document.documentElement.classList.remove('no-been-anim');
     var start = null;
     var dif = document.querySelector('#boxVideo-end').getBoundingClientRect().top - document.querySelector('#boxVideo-start').getBoundingClientRect().top;
     requestAnimFrame(function animate(time) {
