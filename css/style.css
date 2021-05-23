@@ -958,13 +958,18 @@ a.btn {
   height: 0;
 }
 
-.section-1 img {
-  max-width: 56.5625vw;
+.section-1 .wrapper-logo {
   position: absolute;
-  top: 49.5%;
-  left: 49.9%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-54.3%, -57.3%);
+          transform: translate(-54.3%, -57.3%);
+}
+
+.section-1 .wrapper-logo img {
+  top: 0;
+  left: 0;
+  max-width: 56.5625vw;
 }
 
 .custom-block-1 {
@@ -1083,12 +1088,32 @@ a.btn {
           transform: translate(0%, 30%);
 }
 
+.custom-block-1 .h2, .custom-block-1 .h2 + p {
+  opacity: 0;
+  -webkit-transform: translate(-50px, 0);
+          transform: translate(-50px, 0);
+  -webkit-transition: opacity 0.2s 0.85s, -webkit-transform 0.2s 0.85s;
+  transition: opacity 0.2s 0.85s, -webkit-transform 0.2s 0.85s;
+  transition: opacity 0.2s 0.85s, transform 0.2s 0.85s;
+  transition: opacity 0.2s 0.85s, transform 0.2s 0.85s, -webkit-transform 0.2s 0.85s;
+}
+
+.custom-block-1.isVision .h2, .custom-block-1.isVision .h2 + p {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
 .scrolling .custom-block-1 .image-video-first, .scrolling .custom-block-1 .image-video-last {
   opacity: 1;
 }
 
 .scrolling .custom-block-1 #boxVideo {
   opacity: 0;
+}
+
+.ie-11 .custom-block-1 .image-video-first {
+  opacity: 1;
 }
 
 .features {
@@ -1151,6 +1176,7 @@ a.btn {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
+  max-width: 100%;
 }
 
 .grid-messages__item {
@@ -1166,14 +1192,24 @@ a.btn {
 
 .grid-messages__item--center {
   background: none;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 1 auto;
-          flex: 0 1 auto;
   -webkit-box-ordinal-group: 0;
   -webkit-order: -1;
           order: -1;
   text-align: center;
   margin: 30px 15px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+          flex: 0 1 auto;
+  width: 100%;
+}
+
+.grid-messages__item--center > div {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.grid-messages__item--center img {
+  min-width: 0;
 }
 
 .grid-messages__message {
@@ -1314,6 +1350,7 @@ a.btn {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
           flex-direction: column;
+  max-width: 100%;
 }
 
 .row-path::before {
@@ -1577,6 +1614,27 @@ a.btn {
   max-height: 3.125em;
 }
 
+@media (min-width: 470px) {
+  .section-1 .wrapper-logo {
+    -webkit-transform: translate(-53%, -57.3%);
+            transform: translate(-53%, -57.3%);
+  }
+}
+
+@media (min-width: 500px) {
+  .section-1 .wrapper-logo {
+    -webkit-transform: translate(-52%, -57.3%);
+            transform: translate(-52%, -57.3%);
+  }
+}
+
+@media (min-width: 530px) {
+  .section-1 .wrapper-logo {
+    -webkit-transform: translate(-51%, -56.8%);
+            transform: translate(-51%, -56.8%);
+  }
+}
+
 @media (min-width: 550px) {
   .form-custom-1 {
     margin-top: 75px;
@@ -1670,6 +1728,20 @@ a.btn {
   }
 }
 
+@media (min-width: 675px) {
+  .section-1 .wrapper-logo {
+    -webkit-transform: translate(-50%, -56%);
+            transform: translate(-50%, -56%);
+  }
+}
+
+@media (min-width: 750px) {
+  .section-1 .wrapper-logo {
+    -webkit-transform: translate(-49%, -53%);
+            transform: translate(-49%, -53%);
+  }
+}
+
 @media (min-width: 48rem) {
   .background-many-gradient.background-many-gradient--small.background-many-gradient--box-md {
     margin-left: 18px;
@@ -1704,6 +1776,13 @@ a.btn {
   }
   .carousel-offers__text .btn {
     margin-top: 0.3em;
+  }
+}
+
+@media (min-width: 950px) {
+  .section-1 .wrapper-logo {
+    -webkit-transform: translate(-49%, -51%);
+            transform: translate(-49%, -51%);
   }
 }
 
@@ -1790,6 +1869,7 @@ a.btn {
             transform: rotate(-45deg);
   }
   .grid-messages__item--center {
+    width: auto;
     margin: 40px 0;
     -webkit-box-ordinal-group: 1;
     -webkit-order: 0;
@@ -1843,6 +1923,7 @@ a.btn {
     margin-bottom: 100px;
   }
   .row-path--lg {
+    width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -1937,6 +2018,13 @@ a.btn {
 @media (min-width: 1375px) {
   .section--mb {
     margin-bottom: 110px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section-1 .wrapper-logo {
+    -webkit-transform: translate(-50%, -51%);
+            transform: translate(-50%, -51%);
   }
 }
 

@@ -18,10 +18,11 @@ function smoothScrollToCoords(block, setting) {
     setting = {}
   }
   if (typeof block == 'string') {
-    block = document.querySelector(block);
-    if (block != '#boxVideo-start') {
+    if (block != '#boxVideo-start' && block != '#boxVideo-end') {
       document.documentElement.classList.add('scrolling');
     }
+
+    block = document.querySelector(block);
   }
   
   let curentScroll = pageYOffset,
@@ -60,7 +61,6 @@ function smoothScrollToCoords(block, setting) {
   if (setting.speed) {
     duration = Math.abs(Math.ceil(distanse/setting.speed)) * 100;
   }
-  console.log('work')
 
   if ('scrollTo' in window) {
     let start = null;
