@@ -109,6 +109,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var boxVideoStart = document.querySelector('#boxVideo-start');
   var boxVideoEnd = document.querySelector('#boxVideo-end');
 });
+window.addEventListener('load', function () {
+  document.documentElement.classList.add('loaded');
+});
 
 function ibg() {
   var ibg = document.querySelectorAll(".ibg");

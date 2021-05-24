@@ -269,14 +269,14 @@ document.addEventListener('DOMContentLoaded', function () {
     var block = document.querySelector('#boxVideo-start');
     var blockTop = block && block.getBoundingClientRect().top;
 
-    if (blockTop && blockTop <= 0) {
+    if (blockTop && blockTop + block.clientHeight / 2 <= 0) {
       if (!window.animateStart) {
         window.animateStart = true;
         videoAnim();
       }
     }
 
-    if (blockTop && blockTop > 150) {
+    if (blockTop && blockTop + block.clientHeight / 2 > 150) {
       if (!window.animateReverse) {
         window.animateReverse = true;
         videoAnimReverse();
@@ -289,7 +289,9 @@ document.addEventListener('DOMContentLoaded', function () {
     window.requestAnimFrame(loop);
   }
 
-  window.requestAnimFrame(loop);
+  window.addEventListener('load', function () {
+    window.requestAnimFrame(loop);
+  });
 });
 
 function isInternetExplorer() {

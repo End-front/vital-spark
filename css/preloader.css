@@ -1,0 +1,66 @@
+#preloader {
+  background: #121212;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s, visibility 0s 0.3s;
+  transition: opacity 0.3s, visibility 0s 0.3s;
+}
+
+#preloaderCircle {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  margin: -25px 0 0 -25px;
+  border: 4px #fff solid;
+  border-top: 4px #666666 solid;
+  border-right: 4px #666666 solid;
+  border-bottom: 4px #666666 solid;
+  border-radius: 50%;
+  -webkit-animation: spin3 1s infinite linear;
+  animation: spin3 1s infinite linear;
+}
+
+@-webkit-keyframes spin3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes spin3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+html {
+  overflow-y: hidden;
+}
+
+html.loaded {
+  overflow-y: auto;
+}
+
+html.loaded #preloader {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=maps/preloader.css.map */
